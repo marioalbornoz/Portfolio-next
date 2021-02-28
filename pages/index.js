@@ -1,10 +1,10 @@
 import { Layout } from "../components/Layout";
+import { experiences, skills } from "../profile";
 
 const Index = () => (
   <Layout>
-    <h1>Hello world</h1>
     {/* header */}
-    <header>
+    <header className="row">
       <div className="col-md-12">
         <div className="card card-body bg-secondary text-light">
           <div className="row">
@@ -13,7 +13,7 @@ const Index = () => (
             </div>
             <div className="col-md-8">
               <h1>Mario Albornoz Castro</h1>
-              <h3>FullStack Developer</h3>
+              <h5>Ingeniero Informatico - FullStack Developer jr</h5>
               <p>
                 Egresado de ingeniería en informática de la UTEM, en proceso de
                 titulación, desarrollador web y técnico medio en
@@ -41,6 +41,48 @@ const Index = () => (
       </div>
     </header>
     {/* end header */}
+    {/* second section */}
+    <div className="row py-2">
+      <div className="col-md-4">
+        <div className="card bg-light">
+          <div className="card-body">
+            <h2>skills</h2>
+
+            {skills.map(({ skill, percentage }, i) => (
+              <div className="py-3" key={i}>
+                <h5>{skill}</h5>
+                <div className="progress">
+                  <div
+                    className="progress-bar"
+                    role="progressbar"
+                    style={{ width: `${percentage}%` }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="col-md-8">
+        <div className="card bg-light">
+          <div className="card-body">
+            <h2>Experience</h2>
+            <ul>
+              {experiences.map(({ title, company, desc, from, to }, i) => (
+                <li key={i}>
+                  <h3>{title}</h3> <span className="lead">{company}</span>
+                  <h5>
+                    {" "}
+                    {from} - {to ? to : "current"}
+                  </h5>
+                  <p>{desc}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 );
 
