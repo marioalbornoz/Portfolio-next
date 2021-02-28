@@ -83,7 +83,10 @@ typings/
 .parcel-cache
 
 # Next.js build output
-.next/
+.next
+.next/static/chunks/webpack.js
+.next/server/pages-manifest.json
+.next/static/chunks/webpack.js
 
 # Nuxt.js build / generate output
 .nuxt
@@ -114,5 +117,4 @@ dist
 .vscode-test
 
 # End of https://www.toptal.com/developers/gitignore/api/node
-.next/static/chunks/webpack.js
-.next/server/pages-manifest.json
+
