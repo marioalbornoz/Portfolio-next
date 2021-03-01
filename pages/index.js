@@ -1,5 +1,6 @@
 import { Layout } from "../components/Layout";
-import { experiences, skills } from "../profile";
+import { experiences, projects, skills } from "../profile";
+import Link from 'next/link';
 
 const Index = () => (
   <Layout>
@@ -79,6 +80,38 @@ const Index = () => (
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Portfolio */}
+    <div className="row">
+      <div className="col-md-12">
+        <div className="card card-body bg-dark">
+          <div className="row">
+            <div className="col-md-12">
+              <h1 className="text-center text-light">Portfolio</h1>
+            </div>
+            {projects.map(({ title, desc, url, image }, i) => (
+              <div className="col-md-4 p-2" key={i}>
+                <div className="card h-100">
+                  <div className="overflow">
+                    <img src={`/${image}`} className="card-img-top" />
+                  </div>
+                  <div className="card-body">
+                    <h3>{title}</h3>
+                    <p>{desc}</p>
+                    <a href={url}>Know more</a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-4">
+            <Link href="#!">
+              <a className="btn btn-outline-light">More projects</a>
+            </Link>
           </div>
         </div>
       </div>

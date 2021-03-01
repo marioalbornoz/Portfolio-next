@@ -1,5 +1,5 @@
 import { Navbar } from './Navbar';
-import Head from 'next/head';
+import { Footer } from './Footer';
 
 export const Layout = ({children}) => {
     return (
@@ -7,6 +7,8 @@ export const Layout = ({children}) => {
         <Navbar />
 
         <main className="container py-4">{children}</main>
+
+        <Footer />
       </>
     );
 }

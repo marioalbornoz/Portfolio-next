@@ -42,3 +42,43 @@ export const experiences = [
     to: "Julio 2020",
   },
 ];
+
+export const projects = [
+    {
+        title: 'Proyecto 1',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio1.jpeg'
+    },
+    {
+        title: 'Proyecto 2',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio2.jpg'
+    },
+    {
+        title: 'Proyecto 3',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio3.png'
+    },
+    {
+        title: 'Proyecto 4',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio4.png'
+    },
+    {
+        title: 'Proyecto 5',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio5.jpeg'
+    },
+    {
+        title: 'Proyecto 6',
+        desc: 'Descripcion randmon',
+        url : '#!',
+        image: 'portfolio6.jpeg'
+    },
+    
+]
