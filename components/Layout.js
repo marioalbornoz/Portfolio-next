@@ -4,12 +4,12 @@ import { useEffect } from 'react';
 import {useRouter} from 'next/router';  
 import nProgress from 'nprogress';  /*carga un loader*/
 
-export const Layout = ({children}) => {
+export const Layout = ({children, footer = true, dark = false}) => {
 
   const router = useRouter();
 
    useEffect(() => {
-     // Permite ver la url actual gracias a hook useRouter - escucha los cambios - apaga
+     // Permite ver la url actual gracias a hook useRouter - escucha los cambios - completa - apaga en el return
 
      const handleRouteChange = (url) => {
        console.log(url);
@@ -26,12 +26,12 @@ export const Layout = ({children}) => {
    }, []); /* Spinner y efecto de carga gracias a nProgress*/ 
 
     return (
-      <>
+      <div className={dark ? "bg-dark" : null}>
         <Navbar />
 
         <main className="container py-4">{children}</main>
 
-        <Footer />
-      </>
+        { footer ? <Footer /> : null }
+      </div>
     );
 }

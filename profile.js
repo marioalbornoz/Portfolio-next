@@ -82,3 +82,22 @@ export const projects = [
     },
     
 ]
+
+export const posts = [
+  {
+    title: "React",
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique hic quaerat. Tempore eum consequatur, quidem eaque earum soluta amet tenetur sint, officiis ut quis fugit necessitatibus dicta, nostrumexercitationem!',
+    imgUrl : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+  },
+  {
+    title: "Django",
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique hic quaerat. Tempore eum consequatur, quidem eaque earum soluta amet tenetur sint, officiis ut quis fugit necessitatibus dicta, nostrumexercitationem!',
+    imgUrl : 'https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F99332B335B585EB81D'
+  },
+  {
+    title: "Nextjs",
+    content:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique hic quaerat. Tempore eum consequatur, quidem eaque earum soluta amet tenetur sint, officiis ut quis fugit necessitatibus dicta, nostrumexercitationem!',
+    imgUrl : 'https://media.vlpt.us/images/bigbrothershin/post/c375d3e6-21db-4fa6-9a2a-0c0c66819adf/nextjs%20image.jpeg'
+  },
+  
+];
